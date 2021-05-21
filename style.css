@@ -1,0 +1,40 @@
+* {
+  margin: 10px;
+  align-items: center;
+  padding: 5px;
+  width: 1000px;
+  background-color: rgb(8, 8, 10);
+  color: hotpink;
+}
+
+.pagestyle {
+  display: table;
+  width: 20px;
+}
+
+.background {
+  width: 100%;
+}
+
+audio {
+  /* opacity: 0.8; */
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+.letsgo {
+  color: antiquewhite;
+  font-size: xx-large;
+  text-align: center;
+}
+
+a {
+  color: hotpink;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+}

@@ -1,0 +1,234 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+  line-height: 1.33em;
+  color: #737373;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  /*background-color: black;*/
+}
+
+#loader {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  margin: -75px 0 0 -75px;
+  /*border: 10px red solid;*/
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s infinite;
+  z-index: 1001;
+}
+
+#loader2 {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+  margin: -150px 0 0 -150px;
+  border: 10px red solid;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s infinite;
+}
+
+#loader3 {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 750px;
+  height: 750px;
+  margin: -225px 0 0 -225px;
+  border: 10px red solid;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #c2db34;
+  -webkit-animation: spin 1.5s cubic-bezier(1, 0, 1, 5) infinite;
+  animation: spin 1.5s cubic-bezier(1, 5, 1, 1) infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #6f3ce7;
+  -webkit-animation: spin 3s cubic-bezier(1, 6, 1, 1) infinite;
+  animation: spin 3s cubic-bezier(1, 6, 1, 1) infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 95px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #2a3258;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+#loader2:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  right: 30px;
+  bottom: 30px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #eb6fd6;
+  -webkit-animation: spin 1.5s infinite;
+  animation: spin 1.5s infinite;
+}
+
+#loader2:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 35px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #6f9feb;
+  -webkit-animation: spin 1.5s infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+#loader3:before {
+  content: "";
+  position: center;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #45c7e7;
+  -webkit-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
+}
+
+#loader3:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #fa3333;
+  -webkit-animation: spin 5s cubic-bezier(1, 6, 1, 1) infinite;
+  animation: spin 5s cubic-bezier(5, 6, 5, 1) infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded Styles*/
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%); /* IE 9 */
+  transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.3s 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(100%); /* IE 9 */
+  transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.3s 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+
+  -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateY(-100%); /* IE 9 */
+  transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.3s 0.6s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s 0.6s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+/* HERE should be all the content of the page BODY
+
+.content {
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 50px;
+  width: 80%;
+  max-width: 970px;
+} */
