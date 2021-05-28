@@ -1,0 +1,11 @@
+html {
+  margin: 10px;
+  align-items: center;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: #08080a;
+  color: hotpink;
+  display: flex;
+  border: thick solid hotpink;
+}

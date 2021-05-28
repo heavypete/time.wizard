@@ -1,37 +1,69 @@
-* {
+html {
   margin: 10px;
-  align-items: center;
+  /* align-items: center; */
   padding: 5px;
-  width: 1000px;
-  background-color: rgb(8, 8, 10);
+  /* width: 1000px; */
+  background-color: #08080a;
   color: hotpink;
+  display: flex;
 }
 
-.pagestyle {
-  display: table;
+.container {
+  display: flex;
   width: 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-.background {
+#mainpic {
+  width: 80%;
+  padding: 40px;
+}
+
+.intro {
+}
+
+h1 {
+  text-align: center;
+}
+
+.gifcontainer {
   width: 100%;
+  justify-content: center;
 }
 
 audio {
-  /* opacity: 0.8; */
+  opacity: 0.8;
 }
 
 a:hover {
   background-color: yellow;
+  animation-fill-mode: forwards;
 }
 
 .letsgo {
-  color: antiquewhite;
   font-size: xx-large;
   text-align: center;
+  width: 30%;
+  background-color: aqua;
+  margin: auto;
+  margin-top: 90px;
+  border: 10px solid hotpink;
 }
 
+.gobutton {
+  width: 120px;
+  height: 20px;
+  background-color: azure;
+  align-items: center;
+}
 a {
   color: hotpink;
+}
+div a {
+  align-items: center;
 }
 
 footer {
